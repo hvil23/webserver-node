@@ -9,7 +9,7 @@ require('./hbs/helpers');
 // Const global app defines
 const app = express();
 
-const puerto = 8080;
+const puerto = process.env.PORT || 3000;
 
 // Partials defines
 hbs.registerPartials(__dirname+'/views/parciales');
